@@ -3,6 +3,7 @@ package tacos.design.controllers;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,8 @@ import java.util.stream.Collectors;
 
 import tacos.design.model.Ingredient.Type;
 import tacos.design.model.Taco;
+
+import javax.validation.Valid;
 
 @Slf4j
 @Controller
@@ -44,7 +47,11 @@ public class DesignTacoController {
     }
 
     @PostMapping
-    public String processDesign(Taco design) {
+    public String processDesign(@Valid Taco design, Errors error) {
+        if (error.hasErrors()) {
+            return "design";
+        }
+
         log.info("Process design: " + design);
         return "redirect:orders/current";
     }
