@@ -1,4 +1,4 @@
-package tacos.design.repo;
+package tacos.design.repo.jdbc;
 
 import tacos.design.model.Taco;
 

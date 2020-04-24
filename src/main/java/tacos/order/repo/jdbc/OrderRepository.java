@@ -1,4 +1,4 @@
-package tacos.order.repo;
+package tacos.order.repo.jdbc;
 
 import tacos.order.model.Order;
 

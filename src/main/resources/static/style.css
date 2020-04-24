@@ -27,11 +27,3 @@ div.ingredient-group {
 span.validationError {
     color: red;
 }
-
-body {
-    background-color: lightblue;
-}
-
-img {
-    size: 20px;
-}

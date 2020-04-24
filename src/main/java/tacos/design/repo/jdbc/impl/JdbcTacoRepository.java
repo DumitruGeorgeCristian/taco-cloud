@@ -1,4 +1,4 @@
-package tacos.design.repo.impl;
+package tacos.design.repo.jdbc.impl;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
@@ -8,7 +8,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 import tacos.design.model.Ingredient;
 import tacos.design.model.Taco;
-import tacos.design.repo.TacoRepository;
+import tacos.design.repo.jdbc.TacoRepository;
 
 import java.sql.Timestamp;
 import java.sql.Types;
