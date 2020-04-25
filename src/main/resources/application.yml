@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/tacocloud
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+
+  profiles: prod
+  
+logging:
+  level:
+    root: WARN
+    org.sppringframework.security: DEBUG
+
+taco:
+  orders:
+    pagesize: 10
