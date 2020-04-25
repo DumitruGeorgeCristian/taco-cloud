@@ -1,6 +1,6 @@
-package tacos.design.repo.jdbc;
+package tacos.repo.jdbc;
 
-import tacos.design.model.Taco;
+import tacos.model.Taco;
 
 public interface TacoRepository {
 

@@ -1,7 +1,7 @@
-package tacos.design.repo.jpa;
+package tacos.repo.jpa;
 
 import org.springframework.data.repository.CrudRepository;
-import tacos.design.model.Ingredient;
+import tacos.model.Ingredient;
 
 public interface IngredientRepository extends CrudRepository<Ingredient, String> {
 }

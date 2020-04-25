@@ -1,4 +1,4 @@
-package tacos.design.model;
+package tacos.model;
 
 import lombok.AccessLevel;
 import lombok.Data;

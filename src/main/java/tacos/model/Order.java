@@ -1,8 +1,7 @@
-package tacos.order.model;
+package tacos.model;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
-import tacos.design.model.Taco;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
@@ -23,6 +22,9 @@ public class Order implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @ManyToOne
+    private User user;
 
     private Date placedAt;
 

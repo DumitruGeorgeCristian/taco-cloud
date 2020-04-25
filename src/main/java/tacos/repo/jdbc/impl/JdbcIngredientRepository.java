@@ -1,10 +1,10 @@
-package tacos.design.repo.jdbc.impl;
+package tacos.repo.jdbc.impl;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import tacos.design.model.Ingredient;
-import tacos.design.repo.jdbc.IngredientRepository;
+import tacos.model.Ingredient;
+import tacos.repo.jdbc.IngredientRepository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
